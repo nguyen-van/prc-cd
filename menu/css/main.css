@@ -1,0 +1,132 @@
+body {
+  margin: 0 auto;
+  background: #31c5ff; }
+
+* a {
+  text-transform: none;
+  text-decoration: none; }
+
+header img {
+  width: 95px;
+  height: 95px;
+  float: left; }
+
+header #menu_pc {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right; }
+  @media screen and (max-width: 480px) {
+    header #menu_pc {
+      display: none; } }
+  @media screen and (max-width: 767px) {
+    header #menu_pc {
+      display: none; } }
+  header #menu_pc .home, header #menu_pc .life, header #menu_pc .food, header #menu_pc .travel, header #menu_pc .contact {
+    cursor: pointer;
+    background: inherit;
+    float: left;
+    margin: 20px 0 0 0;
+    padding: 22px 45px 22px 45px;
+    text-transform: capitalize;
+    transition: .5s; }
+    header #menu_pc .home:hover, header #menu_pc .life:hover, header #menu_pc .food:hover, header #menu_pc .travel:hover, header #menu_pc .contact:hover {
+      background: #1897f8;
+      border-radius: 5px;
+      transition: .5s; }
+  header #menu_pc .contact {
+    margin-right: 30px; }
+
+header .btn_menu {
+  float: right;
+  margin: 30px 33px 0 15px;
+  padding: 10px;
+  border: 1px solid #82c0f3;
+  background: #82c0f3;
+  box-shadow: 0 0 15px 3px #5686e8; }
+  @media screen and (min-width: 768px) {
+    header .btn_menu {
+      display: none; } }
+  header .btn_menu .lineTop, header .btn_menu .lineMid, header .btn_menu .lineBot {
+    background: #000;
+    width: 25px;
+    height: 2px;
+    margin: 4px 2px 4px 2px; }
+
+header .btn_cross {
+  float: right;
+  margin: 30px 33px 0 15px;
+  padding: 25px 25px 20px 25px;
+  border: 1px solid #82c0f3;
+  background: #82c0f3;
+  box-shadow: 0 0 15px 3px #5686e8; }
+  @media screen and (min-width: 768px) {
+    header .btn_cross {
+      display: none; } }
+  header .btn_cross .lineTop, header .btn_cross .btn_menu .lineMid, header .btn_menu .btn_cross .lineMid, header .btn_cross .lineBot {
+    background: #000;
+    width: 25px;
+    height: 2px;
+    margin: 4px 2px 4px 2px;
+    animation: 2s;
+    position: absolute;
+    top: 49px;
+    right: 44px;
+    transform: rotate(45deg); }
+  header .btn_cross .lineBot {
+    transform: rotate(-45deg); }
+
+header #menu_mobile {
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 0;
+  float: right;
+  background: #fff;
+  position: absolute;
+  top: 70px;
+  right: 33px; }
+  header #menu_mobile .home, header #menu_mobile .life, header #menu_mobile .food, header #menu_mobile .travel, header #menu_mobile .contact {
+    cursor: pointer;
+    background: #fff;
+    margin: 20px;
+    padding: 22px;
+    width: 170px;
+    text-transform: capitalize; }
+    header #menu_mobile .home:hover, header #menu_mobile .life:hover, header #menu_mobile .food:hover, header #menu_mobile .travel:hover, header #menu_mobile .contact:hover {
+      background: #1897f8;
+      border-radius: 5px;
+      transition: .5s; }
+    @media screen and (max-width: 480px) {
+      header #menu_mobile .home, header #menu_mobile .life, header #menu_mobile .food, header #menu_mobile .travel, header #menu_mobile .contact {
+        margin: 20px 0 0 0;
+        padding: 22px; } }
+    header #menu_mobile .home:after, header #menu_mobile .life:after, header #menu_mobile .food:after, header #menu_mobile .travel:after, header #menu_mobile .contact:after {
+      content: url("../images/home.png");
+      width: 10px;
+      height: 10px;
+      float: right; }
+  header #menu_mobile .life:after {
+    content: url("../images/life.png");
+    width: 10px;
+    height: 10px; }
+  header #menu_mobile .food:after {
+    content: url("../images/food.png");
+    width: 10px;
+    height: 10px;
+    opacity: .5; }
+  header #menu_mobile .travel:after {
+    content: url("../images/camera.png");
+    width: 10px;
+    height: 10px;
+    opacity: .7; }
+  header #menu_mobile .contact:after {
+    content: url("../images/contact.png");
+    width: 10px;
+    height: 10px; }
+  @media screen and (max-width: 480px) {
+    header #menu_mobile .contact {
+      margin: 20px 0 20px 0;
+      padding: 22px; } }
+  @media screen and (min-width: 768px) {
+    header #menu_mobile {
+      display: none; } }

@@ -1,0 +1,37 @@
+<!DOCTYPE htmlhtml>
+<head>
+  <title>minimo</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width" initial-scale="1"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+  <header><img src="./images/logo.png"/>
+    <ul id="menu_pc">
+      <li class="home">home</li>
+      <li class="life">life</li>
+      <li class="food">food</li>
+      <li class="travel">travel</li>
+      <li class="contact">contact</li>
+    </ul>
+    <div class="btn_menu">
+      <div class="lineTop"></div>
+      <div class="lineMid"></div>
+      <div class="lineBot"></div>
+    </div>
+    <div class="btn_cross">
+      <div class="lineTop"></div>
+      <div class="lineMid"></div>
+      <div class="lineBot"></div>
+    </div>
+    <ul id="menu_mobile">
+      <li class="home">home</li>
+      <li class="life">life</li>
+      <li class="food">food</li>
+      <li class="travel">travel</li>
+      <li class="contact">contact</li>
+    </ul>
+  </header>
+  <script>  $("#menu_mobile").hide();$(".btn_cross" ).hide();$(document).ready(function(){$(".btn_menu").click(function(){$("#menu_mobile").animate({height: 'toggle'});$(".btn_cross" ).show();$(".btn_menu" ).hide();});$(".btn_cross").click(function(){$("#menu_mobile").slideToggle("slow", function(){$(".btn_cross" ).hide();$(".btn_menu" ).show();});});});</script>
+</body>

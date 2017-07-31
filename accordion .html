@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+<style>
+button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+   button.accordion  {
+    color: blue;
+    font-size: 54px;
+  }
+}
+button.accordion.active, button.accordion:hover {
+  background-color: #ddd;
+}
+
+button.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+@media screen and (max-width: 768px) {
+   button.accordion:after  {
+    color: blue;
+  }
+}
+button.accordion.active:after {
+  content: "\2212";
+}
+
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media screen and (max-width: 768px) {
+   div.panel   {
+    color: blue;
+    font-size: 34px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Loremのイプサムの嘆き、AMET consecteturのadipiscingのELIT、sedのtemporと活力、そのような労働と悲しみ、eiusmod行うにはいくつかの重要な事柄に座ります。すべては、私が来る年間で、私は刺激の努力をaliquip可能性がある場合、運動nostrudそれから有利できる学区、.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Loremのイプサムの嘆き、AMET consecteturのadipiscingのELIT、sedのtemporと活力、そのような労働と悲しみ、eiusmod行うにはいくつかの重要な事柄に座ります。すべては、私が来る年間で、私は刺激の努力をaliquip可能性がある場合、運動nostrudそれから有利できる学区、</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Loremのイプサムの嘆き、AMET consecteturのadipiscingのELIT、sedのtemporと活力、そのような労働と悲しみ、eiusmod行うにはいくつかの重要な事柄に座ります。すべては、私が来る年間で、私は刺激の努力をaliquip可能性がある場合、運動nostrudそれから有利できる学区、</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+</body>
+</html>
