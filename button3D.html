@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>button 3D</title>
+	<style>
+		body{
+			background: url("https://ucarecdn.com/74cf67b9-3b7f-4a73-a5bb-563ba76ee2b9/") no-repeat center center;
+		}
+		.triangleL {
+			width:80px;
+			height:50px;
+			left:30px;
+			position:relative;
+			border: none;
+			background: #fff;
+			margin: 50px;
+			border-radius: 5px;
+			box-shadow: inset 0px 1px 0px #ccc, 0px 5px 0px 0px #ccc, 0px 10px 5px #999;
+			z-index:2;
+			outline:none;
+			font-weight: bold;
+		}
+		.triangleL:active {
+			top:3px;
+			box-shadow: inset 0px 1px 0px #ccc, 0px 2px 0px 0px #ccc, 0px 3px 1px #999;
+			outline:none;
+		}
+
+		.triangleL::after,.triangleL::before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			margin-top: -22px;   
+			border-top: 25px solid transparent;
+			border-bottom: 23px solid transparent;
+			border-right: 1em solid;
+			left: -1.0em;
+		}
+		.triangleL::after{   
+			z-index: 2;  
+			border-right-color: #fff;   
+		}
+		/*-------------------------------------------------------------*/
+		.triangleR {
+			width:80px;
+			height:50px;
+			left:30px;
+			position:relative;
+			border: none;
+			background: #fff;
+			margin: 50px;
+			border-radius: 5px;
+			box-shadow: inset 0px 1px 0px #ccc, 0px 5px 0px 0px #ccc, 0px 10px 5px #999;
+			z-index:2;
+			outline:none;
+			font-weight: bold;
+		}
+		.triangleR:active {
+			top:3px;
+			box-shadow: inset 0px 1px 0px #ccc, 0px 2px 0px 0px #ccc, 0px 3px 1px #999;
+			outline:none;
+		}
+		.triangleR::after,.triangleR::before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: rotate(180deg);
+			margin-top: -22px;   
+			border-top: 25px solid transparent;
+			border-bottom: 22.5px solid transparent;
+			border-right: 1em solid #fff;;
+			left: 5.96em;
+		}
+		.triangleR::after{   
+			transform: rotate(180deg);
+			border-right-color: #fff;
+		}
+		/*-------------------------------------------------------------*/
+		.square{
+			margin: 50px;
+			background-color:#fff;
+			height:50px; 
+			line-height:40px;
+			padding:0 30px;
+			font-weight:bold;  
+			border: solid 5px #000;
+			border-width:0 4px 5px 0;
+			border-radius:5px;
+			border-color:transparent #ddd #999 transparent;
+			background-clip:padding-box;
+			outline: 0;
+			transition: 5s;
+		}
+		.square:active{
+			border-width:0 2px 3px 0; 
+			position:relative;
+			left:2px;
+			top:3px;
+			transition: 5s;
+		}
+		/*-------------------------------------------------------------*/
+		.scraser{
+		  margin: 50px;
+		  background-color:#fff;
+		  height: 50px; 
+		  line-height:40px;
+		  padding:0 30px;
+		  font-weight:bold;  
+		  border: solid 25px #000;
+		  border-width: 1px 5px 5px 5px;
+		  border-radius: 30px;
+		  box-shadow: inset 0px 1px 0px #ccc, 0px 5px 0px 0px #ccc, 0px 10px 5px #00f;
+		  border-color:transparent #6f8df0 #76fae6 transparent;
+		  background-clip:padding-box;
+		  outline: 0;
+		  tranistion: 5s;
+		}
+		.scraser:active{
+		  border-width:0 2px 3px 0; 
+		  position:relative;
+		  left:2px;
+		  top:3px;
+		  transition: 5s;
+		}
+	</style>
+</head>
+<body>
+		/*-------------------------------------------------------------------------------------------------*/
+	<button class="triangleL">Click!!</button>
+	<button class="triangleR">Click!!</button> 
+	<button class="square">Click!!</button>
+	<button class="scraser">Click!!</button>
+		/*-------------------------------------------------------------------------------------------------*/
+</html>
