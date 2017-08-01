@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gradient button</title>		
+	<style>
+		.wrap {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  align-content: center;
+		  flex-wrap: wrap;
+		  width: 90%;
+		  margin: 0 auto;
+		  min-height: 50px;
+		}
+		.wrap .btn {
+		  color: #fff;
+		  background: linear-gradient(90deg, var(--a1, #FFEDBC), var(--c2, #FFAFBD) 51%, var(--a1, #FFEDBC)) var(--x, 0)/200%;
+		  box-shadow: 0 0 20px #eee;
+		  border: 0;
+		  border-radius: 10px;
+		  flex: 1 1 auto;
+		  font-weight: bold;
+		  margin: 10px;
+		  padding: 30px;
+		  transition: 0.5s;
+		  text-align: center;
+		  text-transform: uppercase;
+		  outline: 0;
+		}
+		.wrap .btn:hover {
+		  --x: 100%;
+		}
+		.wrap .btn:active {
+		  opacity: .5;
+		}
+		.wrap .btn-1 {
+		  --a1: #FFEDBC;
+		  --c2: #FFAFBD;
+		}
+		.wrap .btn-2 {
+		  --a1: #FFE4C4;
+		  --c2: #FF7F50;
+		}
+		.wrap .btn-3 {
+		  --a1: #E0FFFF;
+		  --c2: #64b3f4;
+		}
+		.wrap .btn-4 {
+		  --a1: #98FB98;
+		  --c2: #66CDAA;
+		}
+		.wrap .btn-5 {
+		  --a1: #E6E6FA;
+		  --c2: #E684AE;
+		}
+		.wrap .btn-6 {
+		  --a1: #f6d365;
+		  --c2: #fda085;
+		}
+		.wrap .btn-7 {
+		  --a1: #c2e9fb;
+		  --c2: #a1c4fd;
+		}
+		.wrap .btn-8 {
+		  --a1: #ffecd2;
+		  --c2: #fcb69f;
+		}
+		.wrap .btn-9 {
+		  --a1: #FFE4C4;
+		  --c2: #B0E0E6;
+		}
+		.wrap .btn-10 {
+		  --a1: #E6E6FA;
+		  --c2: #E684AE;
+		}
+		p {
+		  color: #00BFFF;
+		  font-size: 1.5em;
+		  float: left;
+		  margin: 40px;
+		  text-align: center;
+		}
+		p a {
+		  color: #00BFFF;
+		  text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+	  <button class="btn btn-1">Hover me! :) </button>
+	  <button class="btn btn-2">Hover me! :) </button>
+	  <button class="btn btn-3">Hover me! :) </button>
+	  <button class="btn btn-4">Hover me! :) </button>
+	  <button class="btn btn-5">Hover me! :) </button>
+	  <button class="btn btn-6">Hover me! :) </button>
+	  <button class="btn btn-7">Hover me! :) </button>
+	  <button class="btn btn-8">Hover me! :) </button>
+	  <button class="btn btn-9">Hover me! :) </button>
+	  <button class="btn btn-10">Hover me! :) </button>
+	</div>
+	<p><a href="">@Van |</a><a href=""> github |</a><a href=""> codepen</a></p>
+</body>
+</html>
