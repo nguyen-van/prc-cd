@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elastic transitions</title>
+	<script>
+		body {
+		  min-width: 630px;                          
+		}
+		/*** IE Fix ***/
+		* html #left {
+		  left: 150px;           
+		}
+		#header{
+		  background: #b0dfd8;
+		  padding:5px;
+		  height: 40px;
+		}
+		#container {
+		  padding-left: 200px;  
+		  padding-right: 190px;  
+		}
+		#container .column {
+		  position: relative;
+		  float: left;
+		}
+		#center {
+		  background: #aa9adf;
+		  padding: 10px 20px;  
+		  height: 200px;
+		  width: 100%;
+		}
+		#left {
+		  background: #d9dfb0;
+		  width: 180px;  
+		  height: 200px;
+		  padding: 0 10px;      
+		  right: 240px;         
+		  margin-left: -100%;
+		}
+		#right {
+		  background: #b0dfb1;
+		  width: 130px;       
+		  height: 200px;
+		  padding: 0 10px;       
+		  margin-right: -190px;  
+		}
+		#footer {
+		  background: #b0dfd8;
+		  clear: both;
+		  padding:5px;
+		  height: 40px;
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, quod.</p>
+	</div>
+	<div id="container">
+	    <div id="center" class="column">
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, obcaecati.</p>
+	    </div>
+	    <div id="left" class="column">
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, obcaecati.</p>
+	    </div>
+	    <div id="right" class="column">
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, obcaecati.</p>
+	    </div>
+	</div>
+	<div id="footer">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, aspernatur?</p>
+	</div>
+
+</body>
+</html>
