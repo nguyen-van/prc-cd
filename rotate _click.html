@@ -1,0 +1,40 @@
+code html
+<div class="nav_btn js-rotate-btn">
+  <img src="https://ucarecdn.com/c8ba637d-b818-4cba-9dba-a3be77ed02da/" alt="" id="img">
+</div>
+
+code css
+.nav_btn {
+    width: 93px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 50px auto;
+    padding:0;
+    border: 1px solid #000;
+    margin-left: 67px;
+}
+.nav_btn.js-rotate-btn.is-rotate img{
+  transform: rotate(180deg);
+}
+.nav_btn img{
+	float: left;
+/*	padding-left: 2px;
+	padding-right: 3px;*/
+}
+
+img:hover{
+	background: #cccccc;
+}
+
+code js:
+
+$(document).ready(function() {
+  $('.js-rotate-btn').on('click', function() {
+
+    $(this).toggleClass('is-rotate');
+
+  });
+});
+
+link script
+https://code.jquery.com/jquery-1.10.2.js>
