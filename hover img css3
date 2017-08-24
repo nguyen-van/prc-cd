@@ -3,13 +3,13 @@ see more at: https://codepen.io/nguyenvan/
 <div class="container">
 <div class="main">
   <div class="view view-first">
-    <img src="https://www.mommypotamus.com/wp-content/uploads/2017/05/cherry-limeade-recipe-300x200.jpg">
-    <div class="mask">
-      <h2>Style #1</h2>
-      <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-      <a href="#" class="info">Read More</a>
-    </div>
-  </div>  
+      <img src="https://www.mommypotamus.com/wp-content/uploads/2017/05/cherry-limeade-recipe-300x200.jpg">
+      <div class="mask">
+        <h2>Style #1</h2>
+        <p>Using cherries helps you improve your forgetfulness, this is a very healthful fruit that you should use.</p>
+        <a href="#" class="info">Read More</a>
+      </div>
+    </div>  
  </div>
 </div>  
 
