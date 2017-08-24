@@ -1,0 +1,217 @@
+see more at: https://codepen.io/nguyenvan/
+//html code
+<div class="container">
+<div class="main">
+  <div class="view view-first">
+    <img src="https://www.mommypotamus.com/wp-content/uploads/2017/05/cherry-limeade-recipe-300x200.jpg">
+    <div class="mask">
+      <h2>Style #1</h2>
+      <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+      <a href="#" class="info">Read More</a>
+    </div>
+  </div>  
+ </div>
+</div>  
+
+
+//css style
+.view {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 2px #ccc;
+  -moz-box-shadow: 1px 1px 2px #ccc;
+  box-shadow: 1px 1px 2px #ccc;
+  cursor: default;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 2px green;
+    -moz-box-shadow: 1px 1px 2px green;
+    box-shadow: 1px 1px 2px green;
+  }
+  .mask {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  img {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+  h2 {
+    color: #fff;
+    background: green;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    margin: 20px 0 0 0;
+  }
+  p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+  }
+  .info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #ccc;
+    color: #000;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 1px #000;
+    -moz-box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px #000;
+    &:hover {
+      -webkit-box-shadow: 0 0 5px #000;
+      -moz-box-shadow: 0 0 5px #000;
+      box-shadow: 0 0 5px #000;
+    }
+  }
+}
+.view-first {
+  img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    -moz-opacity: 0; /* Netscape */
+    -khtml-opacity: 0; /* Safari 1.x */
+    opacity: 0; /* Good browsers */
+    background-color: rgba(100, 129, 8, 0.8);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  h2 {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    -moz-opacity: 0; /* Netscape */
+    -khtml-opacity: 0; /* Safari 1.x */
+    opacity: 0; /* Good browsers */
+    -webkit-transition: all 0.2s fade;
+    -moz-transition: all 0.2s fade;
+    -o-transition: all 0.2s fade;
+    -ms-transition: all 0.2s fade;
+    transition: all 0.2s fade;
+  }
+  p {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    -moz-opacity: 0; /* Netscape */
+    -khtml-opacity: 0; /* Safari 1.x */
+    opacity: 0; /* Good browsers */
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .info {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    -moz-opacity: 0; /* Netscape */
+    -khtml-opacity: 0; /* Safari 1.x */
+    opacity: 0; /* Good browsers */
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    img {
+      -webkit-transform: scale(1.5, 1.5);
+      -moz-transform: scale(1.5, 1.5);
+      -o-transform: scale(1.5, 1.5);
+      -ms-transform: scale(1.5, 1.5);
+      transform: scale(1.5, 1.5);
+    }
+    .mask {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)"; /* IE 8 */
+      filter: alpha(opacity=1); /* IE 5-7 */
+      -moz-opacity: 1; /* Netscape */
+      -khtml-opacity: 1; /* Safari 1.x */
+      opacity: 1; /* Good browsers */
+    }
+    h2 {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)"; /* IE 8 */
+      filter: alpha(opacity=1); /* IE 5-7 */
+      -moz-opacity: 1; /* Netscape */
+      -khtml-opacity: 1; /* Safari 1.x */
+      opacity: 1; /* Good browsers */
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    p {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)"; /* IE 8 */
+      filter: alpha(opacity=1); /* IE 5-7 */
+      -moz-opacity: 1; /* Netscape */
+      -khtml-opacity: 1; /* Safari 1.x */
+      opacity: 1; /* Good browsers */
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-transition-delay: 0.1s;
+      -moz-transition-delay: 0.1s;
+      -o-transition-delay: 0.1s;
+      -ms-transition-delay: 0.1s;
+      transition-delay: 0.1s;
+    }
+    .info {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)"; /* IE 8 */
+      filter: alpha(opacity=1); /* IE 5-7 */
+      -moz-opacity: 1; /* Netscape */
+      -khtml-opacity: 1; /* Safari 1.x */
+      opacity: 1; /* Good browsers */
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-transition-delay: 0.2s;
+      -moz-transition-delay: 0.2s;
+      -o-transition-delay: 0.2s;
+      -ms-transition-delay: 0.2s;
+      transition-delay: 0.2s;
+    }
+  }
+}
