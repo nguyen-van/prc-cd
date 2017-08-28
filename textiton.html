@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>textiton</title>
+	<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="textition.js"></script>
+	<style>
+		#textition{
+			font-size: 48px;
+			margin: 300px auto;
+			padding: 0;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="textition">
+		<p>textition</p>
+		<p>textition 3D</p>
+		<p>textition Animation</p>
+	</div>  
+	<script>
+		$('#textition').textition({
+			speed: 1,
+			animation: 'ease-in-out',
+			map: {x: 100, y: 0, z: 0},
+			autoplay: true,
+			interval: 1.5,
+			handler: 'mouseenter mouseleave',
+			perspective: 100,
+		})
+	</script>
+</body>
+</html>
+<!-- see more https://codepen.io/collection/nqqrYB/3/-->
+<!-- file Js at:
+https://ucarecdn.com/1d11ab64-abde-4a9b-9749-c361e709b295/
+https://ucarecdn.com/d701f0b6-ffba-48b3-b4c7-d472c181d7b9/
+-->
