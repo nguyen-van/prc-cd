@@ -1,0 +1,5 @@
+<div class="l-service" onmouseover="document.getElementById('service01').src='https://ucarecdn.com/cf18ebf5-d484-4879-bc3b-c2eaa03cacb7/'" onmouseout="document.getElementById('service01').src='https://ucarecdn.com/b3a134d3-a354-4935-91a9-8721ef0752c6/'">
+  <img id="service01" src="https://ucarecdn.com/b3a134d3-a354-4935-91a9-8721ef0752c6/" alt="組織コンサルティングサービス">
+  <h2 class="txt23">組織コンサルティング<br/>サービス</h2>
+  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+</div>
