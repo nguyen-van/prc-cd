@@ -1,0 +1,52 @@
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<div class="l-nav-hamburger">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+
+<script>
+	$('.l-nav-hamburger').click(function(e) {
+		$(this).toggleClass('close');
+	});
+</script>
+<style>
+	.l-nav-hamburger {
+		display: inline-block;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		margin: 35px 0;
+		.line {
+			display: inline-block;
+			width: 100%;
+			height: 3px;
+			background: #b52622;
+			position: absolute;
+			transition: all 200ms;
+			&:nth-child(1) {
+			  top: 0;
+			}
+			&:nth-child(2) {
+			  top: 50%;
+			  transform: translateY(-50%);
+			}
+			&:nth-child(3) {
+			  bottom: 0;
+			}
+		}
+		&.close {
+			.line {
+				&:nth-child(1),
+				&:nth-child(2) {
+					top: 0;
+					transform: translateY(9px) rotate(45deg);
+				  }
+				&:nth-child(3) {
+					transform: translateY(-9px) rotate(-45deg);
+				}
+			}
+		}
+	}
+</style>
