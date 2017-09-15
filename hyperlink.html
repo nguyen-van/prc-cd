@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>	
+		body{
+			width: 550px;
+			margin: 50px auto;
+		}
+		.box {
+		  width: 400px;
+		  height: 220px;
+		  background: #ccc;
+		  padding: 20px;
+		  margin: 20px;
+		}
+		.box .button01 {
+		  background: #f96a6a;
+		  border: 1px solid #f96a6a;
+		}
+		.box .button02 {
+		  background: #6ae0f9;
+		  float: right;
+		  border: 1px solid #6ae0f9;
+		  margin: 0 2px;
+		}
+		.box .box02{
+			background: red;
+			height: 20px;
+			width: 400px;
+			margin: 5px 0;
+		}
+	</style>
+</head>
+<body> 
+<div onclick="window.open('#.html','mywindow');" style="cursor: pointer;">
+  <div class="box">
+    <p class="l-txt">
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae officia, 
+     eos ut quaerat assumenda aperiam in 
+    </p>
+    <div>
+    	<p class="l-txt">
+		     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae officia, 
+		     eos ut quaerat assumenda aperiam in
+		</p>
+    </div>
+    <div class="box02"></div>
+	    <a href="#" target="_blank"><button class="button01">demo</button></a>
+	    <a href="#" target="_blank"><button class="button01">demo</button></a>
+	    <a href="#" target="_blank"><button class="button01">demo</button></a>
+	    <a href="#" target="_blank"><button class="button02">demo</button></a>
+		<a href="#" target="_blank"><button class="button02">demo</button></a>
+		<a href="#" target="_blank"><button class="button02">demo</button></a>
+	</div>
+</div>
+</body>
+</html>
